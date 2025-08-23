@@ -48,18 +48,18 @@ def load_models():
     try:
         # Load OS XGBoost model
         xgb_model_os = xgb.Booster()
-        xgb_model_os.load_model("C:/Users/1747351679/Desktop/前列腺癌/Web_Calculator_Assets/OS-xgboost_model.model")
+        xgb_model_os.load_model("OS-xgboost_model.model")
         
         # Load OS Platt parameters
-        with open("C:/Users/1747351679/Desktop/前列腺癌/Web_Calculator_Assets/OS-platt_params.json", 'r') as f:
+        with open("OS-platt_params.json", 'r') as f:
             platt_params_os = json.load(f)
         
         # Load CSS XGBoost model
         xgb_model_css = xgb.Booster()
-        xgb_model_css.load_model("C:/Users/1747351679/Desktop/前列腺癌/Web_Calculator_Assets/CSS-xgboost_model.model")
+        xgb_model_css.load_model("CSS-xgboost_model.model")
         
         # Load CSS Platt parameters
-        with open("C:/Users/1747351679/Desktop/前列腺癌/Web_Calculator_Assets/CSS-platt_params.json", 'r') as f:
+        with open("CSS-platt_params.json", 'r') as f:
             platt_params_css = json.load(f)
         
         return xgb_model_os, platt_params_os, xgb_model_css, platt_params_css
@@ -531,4 +531,5 @@ st.markdown(
     </div>
     """,
     unsafe_allow_html=True
+
 )
