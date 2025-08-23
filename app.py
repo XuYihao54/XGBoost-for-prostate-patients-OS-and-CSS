@@ -378,7 +378,7 @@ def predict_survival(input_data, model, platt_params):
         return None
 
 # Create submit button
-if st.button("Predict 8-Year Mortality Probability", type="primary"):
+if st.button("Predict 8-Year Survival Probability", type="primary"):
     # Verify models loaded successfully
     if xgb_model_os is None or platt_params_os is None or xgb_model_css is None or platt_params_css is None:
         st.error("Model loading failed, cannot make predictions. Please check if model files exist.")
@@ -533,3 +533,4 @@ st.markdown(
     unsafe_allow_html=True
 
 )
+
