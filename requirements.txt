@@ -1,0 +1,4 @@
+# Verified locally on Python 3.12; no online installation performed.
+streamlit==1.48.1
+xgboost==3.0.0
+numpy==1.26.4
