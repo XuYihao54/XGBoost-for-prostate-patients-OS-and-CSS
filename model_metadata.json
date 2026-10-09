@@ -1,0 +1,374 @@
+{
+  "OS": {
+    "feature_order": [
+      "Days to treatment",
+      "PSA value",
+      "Age",
+      "Race",
+      "Marital status",
+      "Histological grade",
+      "T stage",
+      "N stage",
+      "Gleason Score",
+      "Surg.Prim",
+      "Surg.Oth",
+      "Radiation",
+      "Chemotherapy",
+      "Bone metastasis",
+      "Liver metastasis",
+      "Lung metastasis",
+      "Income"
+    ],
+    "categorical_levels_1_based": {
+      "Race": [
+        "Black",
+        "Others",
+        "White"
+      ],
+      "Marital status": [
+        "Married (including common law)",
+        "Unmarried"
+      ],
+      "Histological grade": [
+        "Grade I&Grade II",
+        "Grade III&Grade IV"
+      ],
+      "T stage": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "TX"
+      ],
+      "N stage": [
+        "N0",
+        "N1",
+        "NX"
+      ],
+      "Gleason Score": [
+        "≤6",
+        "≥9",
+        "7",
+        "8"
+      ],
+      "Surg.Prim": [
+        "Done",
+        "None"
+      ],
+      "Surg.Oth": [
+        "Done",
+        "None"
+      ],
+      "Radiation": [
+        "No/Unknown",
+        "Yes"
+      ],
+      "Chemotherapy": [
+        "No/Unknown",
+        "Yes"
+      ],
+      "Bone metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Liver metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Lung metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Income": [
+        "$120,000+",
+        "$40,000 - $79,999",
+        "$800,000 - $119,999",
+        "< $40,000"
+      ]
+    },
+    "numeric_features": [
+      "Days to treatment",
+      "PSA value",
+      "Age"
+    ],
+    "unknown_policy": "error",
+    "missing_policy": "error",
+    "None_is_literal_category": true,
+    "provenance": "existing full-cohort factor dictionary; not learned anew",
+    "prediction_rounds": 133,
+    "calibrator": {
+      "formula": "sigmoid(intercept + coefficient * p_raw)",
+      "intercept": -3.14408724736471,
+      "coefficient": 5.34974266684977,
+      "fit_split": "train",
+      "independent_calibration": false,
+      "source": "Web_Calculator_Assets/OS-platt_model.rds",
+      "source_sha256": "a0ff4584653718942e4c5036c6b1acaec4aa96d7a678a253906d32e15c200da8"
+    },
+    "numeric_bounds": {
+      "Days to treatment": [
+        0,
+        731
+      ],
+      "PSA value": [
+        0.1,
+        98
+      ],
+      "Age": [
+        65,
+        90
+      ]
+    },
+    "display_levels_1_based": {
+      "Race": [
+        "Black",
+        "Others",
+        "White"
+      ],
+      "Marital status": [
+        "Married (including common law)",
+        "Unmarried"
+      ],
+      "Histological grade": [
+        "Grade I&Grade II",
+        "Grade III&Grade IV"
+      ],
+      "T stage": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "TX"
+      ],
+      "N stage": [
+        "N0",
+        "N1",
+        "NX"
+      ],
+      "Gleason Score": [
+        "≤6",
+        "≥9",
+        "7",
+        "8"
+      ],
+      "Surg.Prim": [
+        "Done",
+        "None"
+      ],
+      "Surg.Oth": [
+        "Done",
+        "None"
+      ],
+      "Radiation": [
+        "No/Unknown",
+        "Yes"
+      ],
+      "Chemotherapy": [
+        "No/Unknown",
+        "Yes"
+      ],
+      "Bone metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Liver metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Lung metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Income": [
+        "$120,000+",
+        "$40,000 - $79,999",
+        "$80,000 - $119,999",
+        "< $40,000"
+      ]
+    }
+  },
+  "CSS": {
+    "feature_order": [
+      "Days to treatment",
+      "PSA value",
+      "Age",
+      "Race",
+      "Marital status",
+      "Histological grade",
+      "T stage",
+      "N stage",
+      "Gleason Score",
+      "Surg.Prim",
+      "Surg.Oth",
+      "Radiation",
+      "Chemotherapy",
+      "Bone metastasis",
+      "Liver metastasis",
+      "Lung metastasis",
+      "Brain metastasis"
+    ],
+    "categorical_levels_1_based": {
+      "Race": [
+        "Black",
+        "OTHERS",
+        "White"
+      ],
+      "Marital status": [
+        "Married (including common law)",
+        "unmarried"
+      ],
+      "Histological grade": [
+        "Grade I&Grade II",
+        "Grade III&Grade IV"
+      ],
+      "T stage": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "TX"
+      ],
+      "N stage": [
+        "N0",
+        "N1",
+        "NX"
+      ],
+      "Gleason Score": [
+        "≤6",
+        "≥9",
+        "7",
+        "8"
+      ],
+      "Surg.Prim": [
+        "DONE",
+        "None"
+      ],
+      "Surg.Oth": [
+        "DONE",
+        "None"
+      ],
+      "Radiation": [
+        "None/Unknown",
+        "Yes"
+      ],
+      "Chemotherapy": [
+        "No/Unknown",
+        "Yes"
+      ],
+      "Bone metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Liver metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Lung metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Brain metastasis": [
+        "No",
+        "Yes"
+      ]
+    },
+    "numeric_features": [
+      "Days to treatment",
+      "PSA value",
+      "Age"
+    ],
+    "unknown_policy": "error",
+    "missing_policy": "error",
+    "None_is_literal_category": true,
+    "provenance": "existing full-cohort factor dictionary; not learned anew",
+    "prediction_rounds": 201,
+    "calibrator": {
+      "formula": "sigmoid(intercept + coefficient * p_raw)",
+      "intercept": -4.77996937553809,
+      "coefficient": 6.54447493772286,
+      "fit_split": "train",
+      "independent_calibration": false,
+      "source": "Web_Calculator_Assets/CSS-platt_model.rds",
+      "source_sha256": "e2eda41ce04cd545349bb5763af7d35330021c4ecf96560d89914d7a0fef5a7b"
+    },
+    "numeric_bounds": {
+      "Days to treatment": [
+        0,
+        731
+      ],
+      "PSA value": [
+        0.1,
+        98
+      ],
+      "Age": [
+        65,
+        90
+      ]
+    },
+    "display_levels_1_based": {
+      "Race": [
+        "Black",
+        "Others",
+        "White"
+      ],
+      "Marital status": [
+        "Married (including common law)",
+        "Unmarried"
+      ],
+      "Histological grade": [
+        "Grade I&Grade II",
+        "Grade III&Grade IV"
+      ],
+      "T stage": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "TX"
+      ],
+      "N stage": [
+        "N0",
+        "N1",
+        "NX"
+      ],
+      "Gleason Score": [
+        "≤6",
+        "≥9",
+        "7",
+        "8"
+      ],
+      "Surg.Prim": [
+        "Done",
+        "None"
+      ],
+      "Surg.Oth": [
+        "Done",
+        "None"
+      ],
+      "Radiation": [
+        "No/Unknown",
+        "Yes"
+      ],
+      "Chemotherapy": [
+        "No/Unknown",
+        "Yes"
+      ],
+      "Bone metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Liver metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Lung metastasis": [
+        "No",
+        "Yes"
+      ],
+      "Brain metastasis": [
+        "No",
+        "Yes"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "xgboost": "3.0.0",
+  "models": [
+    {
+      "endpoint": "OS",
+      "source_sha256": "dacb6c5be75eb3900b7e752d92da8531baa8f58e513412158103ccfff034768a",
+      "json_sha256": "6384427e1d6461abe91e7bdba225d5d9d6b2bab069d53442e76fef132420f820",
+      "features": 17,
+      "stored_rounds": 183,
+      "attributes": {
+        "best_iteration": "132",
+        "best_msg": "[133]\ttrain-auc:0.812104\teval-auc:0.814618",
+        "best_ntreelimit": "133",
+        "best_score": "0.81461768686776315",
+        "niter": "182"
+      },
+      "all_trees_and_attributes_unchanged": true
+    },
+    {
+      "endpoint": "CSS",
+      "source_sha256": "0eb212a2cf1862fff6dc4b433da05e48f44e5638e5500e56fa2025bfaa931b18",
+      "json_sha256": "7a9dbf1f1e278fbb2ad2bd77ec2d540c0c83d25d7b088e46ff941cd64187837b",
+      "features": 17,
+      "stored_rounds": 251,
+      "attributes": {
+        "best_iteration": "200",
+        "best_msg": "[201]\ttrain-auc:0.926167\teval-auc:0.914464",
+        "best_ntreelimit": "201",
+        "best_score": "0.91446367290988295",
+        "niter": "250"
+      },
+      "all_trees_and_attributes_unchanged": true
+    }
+  ]
+}
